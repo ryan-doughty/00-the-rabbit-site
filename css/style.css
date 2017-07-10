@@ -243,8 +243,9 @@ footer {
   flex-grow: 1;
 }
 
-footer > p {
+.copyright-info > p {
   padding: 0 .5em;
+  margin: 0;
 }
 
 .caption-info {
