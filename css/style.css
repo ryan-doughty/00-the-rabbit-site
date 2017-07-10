@@ -19,10 +19,10 @@ body {
 }
 
 #wrapper {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -268,6 +268,10 @@ footer {
 .album img {
     max-width: 100%;
   }
+
+.album-cover {
+  margin: 1em 0;
+}
 
 /************************** Track Listing Styles*********************/
 
