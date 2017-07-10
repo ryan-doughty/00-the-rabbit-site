@@ -1,15 +1,13 @@
+@media screen and (min-width: 768px) {
 /************************* Body Styles*************************/
 
-body {
-	background-position: center;
-	background-size: cover;
-}
-
-
+	body {
+		background-position: center;
+		background-size: cover;
+	}
 
 /************************* Header Styles*************************/
 
-@media screen and (min-width: 768px) {
 	.boigah-box,
 	.mobile-nav {
 		display: none;
