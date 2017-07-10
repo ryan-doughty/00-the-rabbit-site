@@ -243,7 +243,7 @@ footer {
   flex-grow: 1;
 }
 
-.copyright-info > p {
+#copyright-info > .copyright {
   padding: 0 .5em;
   margin: 0;
 }
