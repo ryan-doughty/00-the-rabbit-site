@@ -28,6 +28,14 @@
 	.caption-info {
 		font-size: 1em;
 	}
+
+	.slick-prev {
+	    left: -25px;
+	}
+
+	.slick-next {
+	    right: -25px;
+	}
 /***************** Desktop Nav items*****************/
 
 	li .desktop-nav-item {		

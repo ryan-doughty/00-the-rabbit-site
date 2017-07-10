@@ -185,6 +185,14 @@ p {
     padding: 1em;
 }
 
+.slick-prev {
+      left: -15px;
+  }
+
+  .slick-next {
+      right: -15px;
+  }
+
 ul.slick-dots {
   background: transparent;
 }
