@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+  background-image: url("../img/russell-bg.jpg");
+  background-color: #222;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: .2em;
+  flex-grow: 2;
+}
+
+.logo a,
+li a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.logo a:hover,
+li a:hover {
+  text-shadow: none;
+  color: #efefef;
+}
+
+.boigah-box {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 8px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1.67em .5em;
+  position: relative;
+  transition: .5s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.line {
+  display: block;
+  height: 3px;
+  background: white;
+  position: absolute;
+  width: 90%;
+  transition: .25s ease-in-out;
+}
+
+.line-1 {
+  top: 2%;
+}
+
+.line-2 {
+  top: 30%;
+}
+
+.line-3 {
+  top: 60%;
+}
+
+.tilt-down {
+  transform: rotate(45deg);
+  transition-duration: 600ms;
+  top: 50%;
+}
+
+.tilt-up {
+  transform: rotate(-45deg);
+  transition-duration: 600ms;
+  top: 50%;
+}
+
+.go-away {
+  width: 0;
+}
+
+nav {
+  display: none;
+  margin-bottom: 1em;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background: #333;
+}
+
+ul li {
+  color: #efefef;
+  padding: 1em;
+  font-size: .8em;
+}
+
+.main-content {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  background: rgba(0, 0, 0, .7);
+}
+
+h2 {
+  color: white;
+  margin-bottom: 2em;
+}
+
+.main-content-img-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-content-img-container img {
+  max-width: 100%;
+}
+
+p {
+  text-align: left;
+  color: #efefef;
+  line-height: 1.7em;
+  margin-bottom: 1em;
+}
+
+.big-character {
+  font-size: 2.5rem;
+  background: #222;
+  display: inline-block;
+  padding: .3em;
+}
+
+.multiple-items {
+  margin: 2em auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image-container {
+  margin: 1em auto;
+  width: 95%;
+  height: auto;
+}
+
+.image-container a {
+  text-decoration: none;
+}
+
+
+.slick-slide img {
+    display: block;
+    max-width: 100%;
+    padding: 1em;
+}
+
+ul.slick-dots {
+  background: transparent;
+}
+
+.captions {
+    background: #aaa;
+    font-size: 1.3em;
+    line-height: 2.3em;
+    display: block;
+    text-align: center;
+    border-radius: .5em;
+    width: 80%;
+    height: 2.3em;
+    margin: 0 auto;
+  }
+
+  .videos-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+  }
+ 
+  .videos-container iframe,
+  .videos-container object,
+  .videos-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .show-information {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    background: rgba(0, 0, 0, .5); 
+  }
+
+footer {
+  width: 100%;
+  padding-top: .5em;
+  background: #aaa;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+footer > p {
+  padding: 0 .5em;
+}
+
+.caption-info {
+  font-size: .8em;
+  line-height: .8em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/************************** Music Page Styles*********************/
+
+.album {
+  display: inline-block;
+  width: 100%;
+  margin: 2em 0;
+}
+
+.album-cover img,
+.album img {
+    max-width: 100%;
+  }
+
+/************************** Track Listing Styles*********************/
+
+#content {
+  display: flex;
+  text-align: left;
+  color: #aaa;
+  flex-direction: column;
+}
+
+.album-title {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.track-list {
+  display: inline-block;
+}
+
+.track-list > li {
+  display: block;
+  list-style: none;
+  padding: 1em;
+}
+
+.track-list span {
+  display: inline-block;
+  margin: .5em 0;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 800;
+}
+
+.track-list audio {
+  width: 100%;
+}
+
+/************************** Helper Classes **************************/
+
+.display-none {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.width {
+  width: 100% !important;
+}
+
+.margin-top-2em {
+  margin-top: 2em;
+}
+ 
+/************************** General Styles **************************/
+
+a {
+  color: #0aa;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+/************************** Form Styles **************************/
+
+form {
+  padding: 0 2em;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+p {
+  margin: 0 0 3em 0;
+  position: relative;
+}
+label {
+  display: block;
+  font-size: 1.6em;
+  margin: 0 0 .5em;
+}
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none
+}
+
+textarea {
+  padding: .5em;
+  width: 100%;
+}

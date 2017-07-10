@@ -1,0 +1,131 @@
+/************************* Header Styles*************************/
+
+@media screen and (min-width: 768px) {
+	.boigah-box,
+	.mobile-nav {
+		display: none;
+	}
+
+	.logo {
+		flex-grow: 1;
+	}
+
+	.desktop-nav {
+		display: inline-block;
+		margin: 0.67em 0;
+		font-size: 1.3em;
+	}
+
+	.desktop-nav > ul {
+		background: transparent;
+		list-style: none;
+	}
+
+	ul li {
+		display: inline;
+	}
+
+	.caption-info {
+		font-size: 1em;
+	}
+/***************** Desktop Nav items*****************/
+
+	li .desktop-nav-item {		
+	  letter-spacing: 2px;
+	  color: #aaa;
+	  position: relative;
+	  background: transparent;
+	  text-decoration: none;
+	  -webkit-transition: color .3s ease, border-color .3s ease;
+	  transition: color .3s ease, border-color .3s ease;
+	  transition-property: color, border-color;
+	  transition-duration: 0.3s, 0.3s;
+	  transition-timing-function: ease, ease;
+	  transition-delay: initial;
+	}
+
+	.desktop-nav-item:after {
+	  content: " ";
+	  display: block;
+	  position: absolute;
+	  bottom: -3px;
+	  left: 0;
+	  right: 0;
+	  height: 2px;
+	  width: 100%;
+	  background: white;
+	  -webkit-transition:   all .35s ease-in-out;
+	  transition: all .35s ease-in-out;
+	  transition-property: all;
+	  transition-duration: 0.35s;
+	  transition-timing-function: ease-in-out;
+	  transition-delay: initial;
+	  transform: scaleX(0);
+	}
+
+	.desktop-nav-item:hover:after {
+		transform: scaleX(1);
+		color: green;
+	}
+
+	/************************** Footer Styles*********************/
+
+	#copyright-info > p {
+		margin: 1em 0;
+	}
+
+	/************************** Music Landing Page Styles************************/
+
+	.album-cover {
+		width: 45%;
+		display: inline-block;
+		margin: 0 .5em;
+		padding: .5em;
+	}
+
+	/************************** Individual Music Page Styles*********************/
+
+	#content {
+		flex-direction: row;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.album,
+	.track-list {
+		padding: 0 .7em;
+	}
+
+	#content .album {
+		margin: 0;
+	}
+
+	.album img {
+		max-width: 100%;
+	}
+
+	
+/************************** Videos Page Styles*********************/
+
+	.videos-flex-container {
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+
+	.videos-container {
+		width: 40%;
+		flex-direction: column;
+		flex-grow: 1;
+		margin: 1em;
+	}
+/************************** Contact Page Styles*********************/
+
+form {
+	width: 50%;
+}
+	
+}//************************ End of Large View Styles*************************/
+
+
+
