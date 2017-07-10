@@ -78,8 +78,9 @@
 
 	/************************** Footer Styles*********************/
 
-	#copyright-info > p {
-		margin: 1em 0;
+	#copyright-info > .copyright {
+	  margin: 1em 0;
+	  font-size: 1.1em;
 	}
 
 	/************************** Music Landing Page Styles************************/

@@ -245,7 +245,8 @@ footer {
 
 #copyright-info > .copyright {
   padding: 0 .5em;
-  margin: 0;
+  margin: .5em 0;
+  font-size: .8em;
 }
 
 .caption-info {
