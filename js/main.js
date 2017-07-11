@@ -14,6 +14,12 @@ $('.desktop-nav li').hover(function(){
   $(this).removeClass("underline")
 });
 
+$('a[href*="index.html"]').hover(function(){
+  $(this).addClass("underline");
+}, function(){
+  $(this).removeClass("underline")
+});
+
 //Buttons underneath the albums 
 
 $(".button").hover(function() {

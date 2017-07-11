@@ -6,6 +6,10 @@
 		background-size: cover;
 	}
 
+	#wrapper {
+  		background: linear-gradient(transparent, black 80%);
+	}
+
 /************************* Header Styles*************************/
 
 	.boigah-box,
@@ -45,7 +49,8 @@
 	}
 /***************** Desktop Nav items*****************/
 
-	li .desktop-nav-item {		
+	li .desktop-nav-item,
+	a[href*="index.html"] {		
 	  letter-spacing: 2px;
 	  color: #aaa;
 	  position: relative;
@@ -59,7 +64,8 @@
 	  transition-delay: initial;
 	}
 
-	.desktop-nav-item:after {
+	.desktop-nav-item:after,
+	a[href*="index.html"]:after {
 	  content: " ";
 	  display: block;
 	  position: absolute;
@@ -78,7 +84,8 @@
 	  transform: scaleX(0);
 	}
 
-	.desktop-nav-item:hover:after {
+	.desktop-nav-item:hover:after,
+	a[href*="index.html"]:hover:after {
 		transform: scaleX(1);
 		color: green;
 	}
