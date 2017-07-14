@@ -316,6 +316,10 @@ footer {
   display: block;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .display-flex {
   display: flex;
 }
@@ -326,6 +330,11 @@ footer {
 
 .margin-top-2em {
   margin-top: 2em;
+}
+
+.padding-quarter-em {
+    padding: .25em;
+  }
 }
  
 /************************** General Styles **************************/
