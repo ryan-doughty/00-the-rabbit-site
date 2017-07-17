@@ -120,15 +120,15 @@
 
 	.prev-album a,
 	.next-album a {
-	  font-size: .8em;
+	  font-size: 1em;
 	}
 
 	.prev-album:before {
-	    font-size: .8em;
+	    font-size: 1em;
 	  }
 
 	 .next-album:after {
-	 	font-size: .8em;
+	 	font-size: 1em;
 	 }
 
 	.album,
