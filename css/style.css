@@ -278,6 +278,41 @@ footer {
   margin: 1em 0;
 }
 
+.album-breadcrumb {
+  width: 100%;
+  background: #0ee;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.prev-album,
+.next-album {
+  width: 45%;
+  text-align: center;
+  padding: .25em 0;
+}
+
+.prev-album a,
+.next-album a {
+  color: #08f;
+  text-decoration: none;
+  font-size: .75em;
+}
+
+.prev-album:before {
+    content: "<<";
+    color: #08f;
+    font-size: .55em;
+  }
+
+  .next-album:after {
+    content: ">>";
+    color: #08f;
+    font-size: .55em;
+  }
+
+
 /************************** Track Listing Styles*********************/
 
 #content {

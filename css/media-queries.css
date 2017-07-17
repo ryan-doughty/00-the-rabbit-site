@@ -114,6 +114,23 @@
 		margin: 0 auto;
 	}
 
+	.album-breadcrumb {
+		padding: 1em 0;
+	}
+
+	.prev-album a,
+	.next-album a {
+	  font-size: .8em;
+	}
+
+	.prev-album:before {
+	    font-size: .8em;
+	  }
+
+	 .next-album:after {
+	 	font-size: .8em;
+	 }
+
 	.album,
 	.track-list {
 		padding: 0 .7em;
