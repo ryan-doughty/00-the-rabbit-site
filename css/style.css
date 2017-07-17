@@ -156,6 +156,14 @@ p {
   margin-bottom: 1em;
 }
 
+a {
+  color: #aaa;
+}
+
+a:hover {
+  color: #efefef;
+}
+
 .big-character {
   font-size: 2.5rem;
   background: #222;
@@ -336,16 +344,8 @@ footer {
     padding: .25em;
   }
 }
- 
-/************************** General Styles **************************/
 
-a {
-  color: #aaa;
-}
 
-a:hover {
-  color: #efefef;
-}
 
 /************************** Form Styles **************************/
 
