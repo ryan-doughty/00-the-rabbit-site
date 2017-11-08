@@ -80,5 +80,13 @@ for(i = 0; i < items.length; i++) {
 
 $('.track-list').html(tracks);
 
+//Loading Animation stuff
+$body = $("body");
+
+$(document).on({
+    ajaxStart: function() { $body.addClass("loading");    },
+     ajaxStop: function() { $body.removeClass("loading"); }    
+});
+
 
 
