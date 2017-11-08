@@ -418,6 +418,7 @@ textarea {
   padding: 1em;
   border-radius: 10px;
   display: none;
+  z-index: 5000;
 }
 .dot {
   width: 1rem;
