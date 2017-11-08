@@ -417,7 +417,7 @@ textarea {
   background-color: #222;
   padding: 1em;
   border-radius: 10px;
-  display: flex;
+  display: none;
 }
 .dot {
   width: 1rem;
