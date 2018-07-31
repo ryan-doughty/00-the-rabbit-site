@@ -10,6 +10,11 @@
   		background: linear-gradient(transparent, black 80%);
 	}
 
+	.about-text {
+		width: 50%;
+		margin: 0 auto;  
+	}
+
 /************************* Header Styles*************************/
 
 	.boigah-box,
