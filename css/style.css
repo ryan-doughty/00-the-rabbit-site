@@ -262,6 +262,19 @@ footer {
 }
 
 /************************** Music Page Styles*********************/
+.album-covers-wrapper {
+  display: inline-block;
+}
+
+.album-covers-wrapper a.album-cover {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.album-covers-wrapper a.album-cover span {
+  display: inline-block;
+  margin: 1rem 0;
+}
 
 .album {
   display: inline-block;
