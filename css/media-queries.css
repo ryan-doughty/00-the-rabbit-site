@@ -160,8 +160,9 @@
 	 }
 
 	.album,
-	.track-list {
+	ul.track-list {
 		padding: 0 .7em;
+		width: 50%;
 	}
 
 	#content .album {

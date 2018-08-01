@@ -291,9 +291,13 @@ footer {
   margin: 1em 0;
 }
 
+.album-subnav {
+  color: white;
+}
+
 .album-breadcrumb {
   width: 100%;
-  background: #0ee;
+  background: #000;
   display: flex;
   justify-content: space-around;
   flex-grow: 1;
@@ -303,25 +307,25 @@ footer {
 .next-album {
   width: 45%;
   text-align: center;
-  padding: .25em 0;
+  padding: .5em 0;
 }
 
 .prev-album a,
 .next-album a {
-  color: #08f;
+  color: #aaa;
   text-decoration: none;
   font-size: .75em;
 }
 
 .prev-album:before {
     content: "<<";
-    color: #08f;
+    color: #aaa;
     font-size: .55em;
   }
 
   .next-album:after {
     content: ">>";
-    color: #08f;
+    color: #aaa;
     font-size: .55em;
   }
 
@@ -333,6 +337,7 @@ footer {
   text-align: left;
   color: #aaa;
   flex-direction: column;
+  margin-top: 2em;
 }
 
 .album-title {
@@ -340,7 +345,7 @@ footer {
   margin-top: 1em;
 }
 
-.track-list {
+ul.track-list {
   display: inline-block;
 }
 
@@ -418,70 +423,4 @@ input {
 textarea {
   padding: .5em;
   width: 100%;
-}
-
-/**************************Loading Page Styles **************************/
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #222;
-  padding: 1em;
-  border-radius: 10px;
-  display: none;
-  z-index: 5000;
-}
-.dot {
-  width: 1rem;
-  height: 1rem;
-  border: 2px solid white;
-  border-radius: 50%;
-/*   float: left; */
-  margin: 0 5px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-animation: fx 1000ms ease infinite 0ms;
-          animation: fx 1000ms ease infinite 0ms;
-}
-.dot:nth-child(2) {
-  -webkit-animation: fx 1000ms ease infinite 300ms;
-          animation: fx 1000ms ease infinite 300ms;
-}
-.dot:nth-child(3) {
-  -webkit-animation: fx 1000ms ease infinite 600ms;
-          animation: fx 1000ms ease infinite 600ms;
-}
-@-webkit-keyframes fx {
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fx {
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* When the body has the loading class, we turn
-   the scrollbar off with overflow:hidden */
-body.loading {
-    overflow: hidden;   
-}
-
-/* Anytime the body has the loading class, our
-   modal element will be visible */
-body.loading .container {
-    display: flex;
 }
