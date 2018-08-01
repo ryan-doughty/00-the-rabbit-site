@@ -25,20 +25,20 @@ function albumSubnav () {
 	];
 
 	var subnav = '';
+	var href = $(location).attr('href');
 
 	for(a = 0; a < albumPages.length; a++) {
-	  subnav += "<li><a href='" + albumPages[a].url + "'>" + albumPages[a].pageName + "</a></li>";
+		if(href.indexOf(albumPages[a].url) != -1) {
+			subnav += "<li class='current-page'><a href='javascript:void(0);'>" + albumPages[a].pageName + "</a></li>";
+		}
+		else {
+			subnav += "<li><a href='" + albumPages[a].url + "'>" + albumPages[a].pageName + "</a></li>";
+		}
 	}
 
 	$(".album-subnav-mobile-wrapper").find(".album-subnav").html(subnav);
 
-	// var bSidesUrl = "b-sides.html";
-	// var href = $(location).attr('href');
-	// if(href.indexOf(bSidesUrl) != -1) {
-	//   console.log("This is the b-sides page.");
-	// }
-
-	// else {
-	//   console.log("This is some other page, dawg");
-	// }
+	$(".album-subnav-mobile-wrapper").find(".current-page").on('click', function() {
+		$(this).siblings("li").toggleClass("open");
+	});
 }

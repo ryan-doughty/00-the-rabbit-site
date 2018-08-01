@@ -292,16 +292,38 @@ footer {
 }
 
 .album-subnav {
-  color: white;
+  flex-direction: column-reverse;
+  text-align: center;
 }
 
-.album-breadcrumb {
+.album-subnav li a {
+  color: white;
+  font-size: 1em;
+  letter-spacing: .1em;
+}
+
+.album-subnav li {
+  display: none;
+  transition: all .25s ease-in-out;
+}
+.album-subnav li.open {
+  display: inline-block;
+}
+
+.album-subnav li.current-page {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  order: 5;
+}
+
+/*.album-breadcrumb {
   width: 100%;
   background: #000;
   display: flex;
   justify-content: space-around;
   flex-grow: 1;
-}
+}*/
 
 .prev-album,
 .next-album {
