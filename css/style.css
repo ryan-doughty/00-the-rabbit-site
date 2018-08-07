@@ -294,6 +294,7 @@ footer {
 .album-subnav {
   flex-direction: column-reverse;
   text-align: center;
+  border-bottom: 2px solid #aaa;
 }
 
 .album-subnav li a {
@@ -326,34 +327,68 @@ footer {
 }
 
 .album-subnav li.current-page a {
+  position: relative;
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+
+/*.album-subnav li.current-page a::before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  transition: all .25s ease-in;
+  position: absolute;
+  right: 0;
+}
+
+.album-subnav li.current-page.arrow-flip a::before {
+  transform: rotate(-225deg);
+  transition: all .25s ease-out;
+}*/
+
+.album-subnav li.current-page a::before,
+.album-subnav li.current-page a::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  transition: all .25s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.album-subnav li.current-page a::before {
+  border-left: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.album-subnav li.current-page a::after {
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.album-subnav li.current-page.arrow-flip a::before,
+.album-subnav li.current-page.arrow-flip a::after {
+  transition: all .25s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  top: .5rem;
+}
+
+.album-subnav li.current-page.arrow-flip a::before {
+  transform: rotate(45deg);
+}
+
+.album-subnav li.current-page.arrow-flip a::after {
+  transform: rotate(-45deg);
+}
+
+.album-subnav li.current-page a {
   font-size: 1rem;
 }
-
-.prev-album,
-.next-album {
-  width: 45%;
-  text-align: center;
-  padding: .5em 0;
-}
-
-.prev-album a,
-.next-album a {
-  color: #aaa;
-  text-decoration: none;
-  font-size: .75em;
-}
-
-.prev-album:before {
-    content: "<<";
-    color: #aaa;
-    font-size: .55em;
-  }
-
-  .next-album:after {
-    content: ">>";
-    color: #aaa;
-    font-size: .55em;
-  }
 
 
 /************************** Track Listing Styles*********************/

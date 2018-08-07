@@ -173,17 +173,42 @@
 		max-width: 100%;
 	}
 
+	.album-subnav-mobile-wrapper {
+		margin-bottom: 2rem;
+	}
+
 	.album-subnav {
 		flex-direction: row;
+		border-bottom: none;
 	}
 
 	.album-subnav li {
 		display: inline-block;
+		height: auto;
+		padding: 1rem;
+	}
+
+	.album-subnav li a {
+		color: #aaa;
+	}
+
+	.album-subnav li a:hover {
+		color: #fff;
 	}
 
 	.album-subnav li.current-page {
 		order: 0;
+	}
+
+	.album-subnav li.current-page a {
+		letter-spacing: .25em;
+		color: #fff;
 	} 
+
+	.album-subnav li.current-page a::before,
+	.album-subnav li.current-page a::after {
+		display: none;
+	}
 
 	
 /************************** Videos Page Styles*********************/
