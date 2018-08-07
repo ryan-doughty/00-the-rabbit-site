@@ -173,6 +173,18 @@
 		max-width: 100%;
 	}
 
+	.album-subnav {
+		flex-direction: row;
+	}
+
+	.album-subnav li {
+		display: inline-block;
+	}
+
+	.album-subnav li.current-page {
+		order: 0;
+	} 
+
 	
 /************************** Videos Page Styles*********************/
 

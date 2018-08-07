@@ -39,6 +39,7 @@ function albumSubnav () {
 	$(".album-subnav-mobile-wrapper").find(".album-subnav").html(subnav);
 
 	$(".album-subnav-mobile-wrapper").find(".current-page").on('click', function() {
+		// $(this).siblings("li").slideToggle(500);
 		$(this).siblings("li").toggleClass("open");
 	});
 }
