@@ -213,7 +213,31 @@
 	
 /************************** Videos Page Styles*********************/
 
-	.videos-flex-container {
+	.videos-container a {
+		width: calc((100% / 3) - 1rem);
+    	padding: 1rem;
+	}
+
+	.videos-container a:hover .video-card .video-card-image-container img {
+	  width: 95%;
+	  transition: width .25s ease-out;
+	}
+
+	.videos-container a:hover .video-card .video-card-image-container .play-icon {
+		color: rgba(240, 255, 255, .8);
+		transition: color .25s ease-out;
+	}
+
+	.videos-container a:hover .video-card p {
+		color: #aaa;
+		transition: color .25s ease-out;
+	}
+
+	.videos-container a .video-card {
+		height: 100%;
+	}
+
+	/*.videos-flex-container {
 		display: flex;
 	    flex-wrap: wrap;
 	    justify-content: space-between;
@@ -224,7 +248,7 @@
 		flex-direction: column;
 		flex-grow: 1;
 		margin: 1em;
-	}
+	}*/
 /************************** Contact Page Styles*********************/
 
 form {
