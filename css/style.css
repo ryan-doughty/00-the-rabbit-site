@@ -487,6 +487,7 @@ label {
 input {
   display: block;
   box-sizing: border-box;
+  border-radius: .5em;
   width: 100%;
   outline: none
 }
