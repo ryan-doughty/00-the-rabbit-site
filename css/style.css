@@ -211,6 +211,20 @@ ul.slick-dots {
   background: transparent;
 }
 
+.slick-prev:before, 
+.slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.25rem;
+}
+
+.slick-prev:before {
+  content: "\f359";
+}
+
+.slick-next:before {
+  content: "\f35a";
+}
+
 .button {
     background: #aaa;
     font-size: 1.3em;
