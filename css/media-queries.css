@@ -57,7 +57,7 @@
 	li .desktop-nav-item,
 	a[href*="index.html"] {		
 	  letter-spacing: 2px;
-	  color: #aaa;
+	  color: azure;
 	  position: relative;
 	  background: transparent;
 	  text-decoration: none;

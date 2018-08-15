@@ -44,7 +44,7 @@ header {
 .logo a,
 li a {
   text-decoration: none;
-  color: #aaa;
+  color: azure;
 }
 
 .logo a:hover,
@@ -134,10 +134,21 @@ ul li {
   background: rgba(0, 0, 0, .7);
 }
 
-h1 {
-  color: white;
+h1,h2 {
+  color: azure;
   margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+h1 {
   font-size: 1.8em;
+  line-height: 1.8;
+  letter-spacing: .1em;
+}
+h2 {
+  font-size: 1.25em;
+  line-height: 1.25;
+  letter-spacing: .075em;
 }
 
 .main-content-img-container {
