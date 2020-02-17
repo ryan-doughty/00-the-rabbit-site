@@ -413,6 +413,7 @@ ul.track-list {
 
 .track-list audio {
   width: 100%;
+  outline: none;
 }
 
 /************************** Videos Page Styles*********************/
