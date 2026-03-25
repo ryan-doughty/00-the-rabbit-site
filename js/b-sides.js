@@ -22,7 +22,7 @@ var items = [
 	{
 		song: "France",
 		trackURL: "music/bee-sides/france.mp3"
-	}
+	},
 	{
 		song: "Sexy Back (Live)",
 		trackURL: "music/bee-sides/sexy-back.mp3"
