@@ -55,9 +55,11 @@
     		<img src="img/b-sides.jpg">
     		<h2 class="album-title">B-Sides (2006-2016)</h2>
     	</div>
-    	
+
+    	<div id="music-player"></div>
+
     	<ul class="track-list">
-    		
+
     	</ul>
     </div>
     
@@ -68,9 +70,15 @@
     </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/music-player.js"></script>
 <script src="js/b-sides.js"></script>
 <script src="js/album-subnav.js"></script>
 <script src="js/main.js"></script>
 <script src="js/footer.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const player = new MusicPlayer(items);
+  });
+</script>
 </body>
 </html>
