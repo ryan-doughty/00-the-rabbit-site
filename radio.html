@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Double Zero the Rabbit</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+
+
+
+    <link rel="stylesheet" href="js/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="js/slick/slick.css"/>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+
+</head>
+
+<body>
+	<div id="wrapper">
+    <header>
+      <h1 class="logo"><a href="index.html">00 the Rabbit</a></h1>
+      <div class="boigah-box">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </div>
+      <nav class="desktop-nav">
+       <ul>
+        <li><a href="about.html" class="desktop-nav-item">About</a></li>
+        <li><a href="music.html" class="desktop-nav-item">Music</a></li>
+        <li><a href="radio.html" class="desktop-nav-item">Radio</a></li>
+        <li><a href="videos.html" class="desktop-nav-item">Videos</a></li>
+        <li><a href="contact.html" class="desktop-nav-item">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    <nav class="mobile-nav">
+       <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="radio.html">Radio</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="content" class="margin-top-2em">
+    	<h2 class='about'>Radio Station</h2>
+
+    	<p><span class="big-character">T</span>une in and enjoy a random shuffle of all 00 the Rabbit tracks from every album! Each time you reach the end of all tracks, they'll shuffle again. Perfect for discovering your favorite songs in a new order.</p>
+
+    	<div id="radio-player"></div>
+    </div>
+
+    <footer>
+      <div id="copyright-info">
+        <p>All Rights Reserved Copyright <span class="copyright"></span> &mdash; 00 the Rabbit</p>
+      </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/boom-ching.js"></script>
+<script src="js/gourd-of-bees.js"></script>
+<script src="js/bad-machine.js"></script>
+<script src="js/headcount.js"></script>
+<script src="js/b-sides.js"></script>
+<script src="js/radio-player.js"></script>
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Combine all tracks from all albums and shuffle them
+    const allTracks = [
+      ...items // boom-ching items
+    ];
+
+    // We need to reload the items variable for each album
+    // So we'll use a different approach - combine after each load
+    const gourdTracks = typeof items !== 'undefined' ? items : [];
+
+    // Create a mapping of all tracks
+    const boomChingTracks = [
+      {song: "Filling in the Blanks", trackURL: "music/boom-ching/filling-in-the-blanks.mp3"},
+      {song: "Older", trackURL: "music/boom-ching/older.mp3"},
+      {song: "Six Feet Under", trackURL: "music/boom-ching/6-feet-under.mp3"},
+      {song: "Borderline Insanity", trackURL: "music/boom-ching/borderline-insanity.mp3"},
+      {song: "Goodnight", trackURL: "music/boom-ching/goodnight.mp3"},
+      {song: "Headphones On", trackURL: "music/boom-ching/headphones-on.mp3"},
+      {song: "Content and Waiting", trackURL: "music/boom-ching/content-and-waiting.mp3"},
+      {song: "If You Really Care So Much", trackURL: "music/boom-ching/if-you-really-care-so-much.mp3"},
+      {song: "Monster(Boom Ching)", trackURL: "music/boom-ching/monster-boom-ching.mp3"},
+      {song: "Mother&apos;s Sons", trackURL: "music/boom-ching/mothers-sons.mp3"},
+      {song: "Never Got In Late", trackURL: "music/boom-ching/never-got-in-late.mp3"},
+      {song: "Pitch Black", trackURL: "music/boom-ching/pitch-black.mp3"}
+    ];
+
+    const gourdOfBeesTracks = [
+      {song: "Reactor Core", trackURL: "music/gourd-of-bees/reactor-core.mp3"},
+      {song: "Put Down the Phone", trackURL: "music/gourd-of-bees/put-down-the-phone.mp3"},
+      {song: "Loud Noises", trackURL: "music/gourd-of-bees/loud-noises.mp3"},
+      {song: "Mr. Goodtimes", trackURL: "music/gourd-of-bees/mr-goodtimes.mp3"},
+      {song: "17", trackURL: "music/gourd-of-bees/17.mp3"},
+      {song: "DGAF", trackURL: "music/gourd-of-bees/dgaf.mp3"},
+      {song: "Get Together/Be Afraid", trackURL: "music/gourd-of-bees/get-together-be-afraid.mp3"},
+      {song: "Landslide", trackURL: "music/gourd-of-bees/landslide.mp3"},
+      {song: "Hey", trackURL: "music/gourd-of-bees/hey.mp3"},
+      {song: "Gun", trackURL: "music/gourd-of-bees/gun.mp3"},
+      {song: "Intruder", trackURL: "music/gourd-of-bees/intruder.mp3"},
+      {song: "Miracle Cure", trackURL: "music/gourd-of-bees/miracle-cure.mp3"},
+      {song: "Pop Gun", trackURL: "music/gourd-of-bees/pop-gun.mp3"},
+      {song: "Addicted", trackURL: "music/gourd-of-bees/addicted.mp3"},
+      {song: "Wait Around", trackURL: "music/gourd-of-bees/wait-around.mp3"}
+    ];
+
+    const badMachineTracks = [
+      {song: "Stay A While", trackURL: "music/bad-machine/stay-awhile.mp3"},
+      {song: "Jitter, Twitch, and Shake", trackURL: "music/bad-machine/jitter-twitch-and-shake.mp3"},
+      {song: "Naysayer", trackURL: "music/bad-machine/naysayer.mp3"},
+      {song: "New Relationship Basis", trackURL: "music/bad-machine/new-relationship-basis.mp3"},
+      {song: "Judas Blues", trackURL: "music/bad-machine/judas-blues.mp3"},
+      {song: "Cripple Creek", trackURL: "music/bad-machine/cripple-creek.mp3"},
+      {song: "Momentum", trackURL: "music/bad-machine/momentum.mp3"},
+      {song: "Cast", trackURL: "music/bad-machine/cast.mp3"}
+    ];
+
+    const headcountTracks = [
+      {song: "This Ship is Sinking", trackURL: "music/headcount/this-ship-is-sinking.mp3"},
+      {song: "A Light", trackURL: "music/headcount/a-light.mp3"},
+      {song: "Quiet Magazine", trackURL: "music/headcount/quiet-magazine.mp3"},
+      {song: "Headcount", trackURL: "music/headcount/headcount.mp3"},
+      {song: "Run", trackURL: "music/headcount/run.mp3"},
+      {song: "Cry for me", trackURL: "music/headcount/cry-for-me.mp3"},
+      {song: "Pup", trackURL: "music/headcount/pup.mp3"},
+      {song: "Some Kind of Fool", trackURL: "music/headcount/some-kind-of-fool.mp3"}
+    ];
+
+    const bSidesTracks = [
+      {song: "17 (Live)", trackURL: "music/bee-sides/17-live.mp3"},
+      {song: "Get Together/Be Afraid (Live)", trackURL: "music/bee-sides/be-afraid-live.mp3"},
+      {song: "Jitter, Twitch, and Shake (Version 1)", trackURL: "music/bee-sides/jitter-twitch-and-shake.mp3"},
+      {song: "Little Rabbit", trackURL: "music/bee-sides/little-rabbit.mp3"},
+      {song: "Stealin'", trackURL: "music/bee-sides/stealin.mp3"},
+      {song: "France", trackURL: "music/bee-sides/france.mp3"},
+      {song: "Sexy Back (Live)", trackURL: "music/bee-sides/sexy-back.mp3"}
+    ];
+
+    // Combine all tracks
+    const combinedTracks = [
+      ...boomChingTracks,
+      ...gourdOfBeesTracks,
+      ...badMachineTracks,
+      ...headcountTracks,
+      ...bSidesTracks
+    ];
+
+    const radio = new RadioPlayer(combinedTracks);
+  });
+</script>
+</body>
+</html>
