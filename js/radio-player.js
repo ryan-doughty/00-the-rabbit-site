@@ -9,6 +9,7 @@ class RadioPlayer {
     this.setupEventListeners();
     this.renderPlayer();
     this.loadTrack(0);
+    this.play(); // Auto-start playing
   }
 
   setupEventListeners() {
