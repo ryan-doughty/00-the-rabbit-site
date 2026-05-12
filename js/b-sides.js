@@ -26,5 +26,9 @@ var items = [
 	{
 		song: "Sexy Back (Live)",
 		trackURL: "music/bee-sides/sexy-back.mp3"
+	},
+	{
+		song: "Home",
+		trackURL: "music/bee-sides/home.mp3"
 	}
 ];
